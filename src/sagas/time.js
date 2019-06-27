@@ -6,7 +6,7 @@ import {
   FETCH_CURRENT_UTC_TIME_ERROR
 } from '../actions/types';
 
-import { getTimeFromTimezone } from '../services';
+import { getTimeFromTimezone } from '../services/timezone';
 
 function* fetchUTCTime(action){
   try {
