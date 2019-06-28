@@ -17,4 +17,4 @@ const environmentConfigs = {
 };
 
 /*eslint no-undef: off*/
-export default environmentConfigs[process.env.REACT_APP_ENVIRONMENT] || dev;
+export default environmentConfigs[process.env.REACT_APP_ENVIRONMENT] || development;
