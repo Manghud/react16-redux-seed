@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "connected-react-router": "^6.4.0",
+    "jest": "24.7.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
@@ -21,8 +22,8 @@
     "build": "react-scripts build",
     "build:staging": "REACT_APP_ENVIRONMENT=staging craco build",
     "build:production": "REACT_APP_ENVIRONMENT=production craco build",
-    "test": "jest --watchAll",
-    "test:coverage": "jest --coverage",
+    "test": "craco test",
+    "test:coverage": "craco test --watchAll=false --coverage",
     "lint": "node_modules/.bin/eslint --ext .js .",
     "lint:fix": "node_modules/.bin/eslint --fix --ext .js .",
     "eject": "craco eject"
@@ -45,7 +46,10 @@
   "devDependencies": {
     "@craco/craco": "^5.2.3",
     "craco-less": "^1.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "husky": "^2.7.0",
+    "react-test-renderer": "^16.8.6",
     "semantic-ui-less": "^2.4.1"
   }
 }
