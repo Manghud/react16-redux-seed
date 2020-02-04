@@ -2,6 +2,7 @@
 
 # IDE
 *.sublime-*
+*.code-*
 
 # dependencies
 /node_modules
