@@ -6,7 +6,7 @@ class Loading extends Component {
     const { active, dimmed, message = '' } = this.props;
     return (
       <div>
-        <Loader size="huge" active={active} dimmed={dimmed}/>
+        <Loader size="huge" active={active} dimmed={dimmed ? '' : undefined}/>
         <div>{message}</div>
       </div>
     );
