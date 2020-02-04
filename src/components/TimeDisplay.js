@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Header } from 'semantic-ui-react';
 import { fetchCurrentUTCTime } from '../actions/time';
+import './TimeDisplay.module.scss';
 
 class TimeDisplay extends Component {
   constructor(props) {
@@ -21,8 +22,8 @@ class TimeDisplay extends Component {
     return (
       this.props.loading ? <React.Fragment>Loading</React.Fragment> :
         <React.Fragment>
-          <Header as="h2">GMT: <b>{new Date(this.props.UTCTime).toString()}</b> </Header>
-          <Header as="h2">Local: <b>{new Date().toString()}</b> </Header>
+          <Header as="h2" styleName="mainTitle">GMT: <b>{new Date(this.props.UTCTime).toString()}</b> </Header>
+          <Header as="h2" styleName="subTitle">Local: <b>{new Date().toString()}</b> </Header>
         </React.Fragment>
     );
   }
