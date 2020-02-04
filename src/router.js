@@ -1,14 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
+import PropTypes from 'prop-types';
 
-import { routerHistory } from './store';
 import TimeDisplay from './components/TimeDisplay';
 
 class Router extends React.Component {
   render() {
     return (
-      <ConnectedRouter history={routerHistory}>
+      <ConnectedRouter history={this.props.routerHistory}>
         <Switch>
           <Route path="/" component={TimeDisplay}/>
         </Switch>
@@ -16,5 +16,9 @@ class Router extends React.Component {
     );
   }
 }
+
+Router.propTypes = {
+  routerHistory: PropTypes.object.isRequired
+};
 
 export default Router;
