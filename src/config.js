@@ -1,13 +1,16 @@
 const development = {
-  displayReduxTools: true
+  displayReduxTools: true,
+  domainName: ''
 };
 
 const staging = {
-  displayReduxTools: true
+  displayReduxTools: true,
+  domainName: ''
 };
 
 const production = {
-  displayReduxTools: false
+  displayReduxTools: false,
+  domainName: ''
 };
 
 const environmentConfigs = {
