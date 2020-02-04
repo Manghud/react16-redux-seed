@@ -3,7 +3,9 @@ import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import PropTypes from 'prop-types';
 
-import TimeDisplay from './components/TimeDisplay';
+import {
+  TimeDisplay
+} from './routes';
 
 class Router extends React.Component {
   render() {
