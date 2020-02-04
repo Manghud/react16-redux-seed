@@ -1,7 +1,7 @@
-.mainTitle {
-    color: teal !important;
+:global(.ui.header).mainTitle {
+    color: teal;
 }
 
 .subTitle {
-    color: #12a311 !important;
+    color: #12a311;
 }

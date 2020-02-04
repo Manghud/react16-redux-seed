@@ -23,7 +23,7 @@ class TimeDisplay extends Component {
       this.props.loading ? <React.Fragment>Loading</React.Fragment> :
         <React.Fragment>
           <Header as="h2" styleName="mainTitle">GMT: <b>{new Date(this.props.UTCTime).toString()}</b> </Header>
-          <Header as="h2" styleName="subTitle">Local: <b>{new Date().toString()}</b> </Header>
+          <h2 styleName="subTitle">Local: <b>{new Date().toString()}</b> </h2>
         </React.Fragment>
     );
   }
