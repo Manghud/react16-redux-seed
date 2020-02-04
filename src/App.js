@@ -1,21 +1,13 @@
+import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import Router from './router';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
-import { routerHistory, store } from './store';
-
-import TimeDisplay from './components/TimeDisplay';
+import { store } from './store';
 
 function App() {
   return (
-    <Provider store={store}>
-      <ConnectedRouter history={routerHistory}>
-        <Switch>
-          <Route path="/" component={TimeDisplay}/>
-        </Switch>
-      </ConnectedRouter>
-    </Provider>
+    <Provider store={store}><Router/></Provider>
   );
 }
 
-export default App;
+export default hot(App);

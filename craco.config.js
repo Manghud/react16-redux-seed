@@ -23,6 +23,7 @@ module.exports = {
       cacheDirectory: false
     },
     plugins: [
+      'react-hot-loader/babel',
       [
         'babel-plugin-react-css-modules',
         {

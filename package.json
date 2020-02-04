@@ -53,6 +53,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "husky": "^2.7.0",
     "postcss-scss": "^2.0.0",
+    "react-hot-loader": "^4.12.19",
     "react-test-renderer": "^16.8.6",
     "semantic-ui-less": "^2.4.1"
   }
